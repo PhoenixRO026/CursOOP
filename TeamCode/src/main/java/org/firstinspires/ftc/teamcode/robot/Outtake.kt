@@ -8,6 +8,9 @@ class Outtake(
     var position
         get() = hood.position
         set(value) {
-            hood.position = value.coerceIn(0.2, 0.8)
+            hood.position = value.coerceIn(0.75, 1.0)
         }
+
+    fun hoodDown() { position = 0.75 }
+    fun hoodUp() { position = 1.0 }
 }

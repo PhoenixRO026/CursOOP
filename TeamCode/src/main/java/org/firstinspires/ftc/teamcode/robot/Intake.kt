@@ -12,13 +12,6 @@ class Intake(
             motor.power = value
         }
 
-    fun getPower(): Double {
-        return motor.power
-    }
-    fun setPower(value : Double) {
-        motor.power = value
-    }
-
     fun startIntake() { power = 1.0 }
     fun stopIntake() { power = 0.0 }
     fun spew() { power = -1.0 }
